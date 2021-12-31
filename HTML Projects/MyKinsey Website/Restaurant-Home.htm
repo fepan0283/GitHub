@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Restaurant Website </title> 
+</head>
+
+
+
+
+<style>
+.topnav {
+    background-color: rgb(32, 31, 31);
+    overflow: hidden;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.topnav a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    text-decoration: None;
+    font-size: 14px;
+}
+.topnav a:hover {
+    font-weight:bolder;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.slogan {
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    background-color: #C4AE78;
+    padding: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+}
+
+.picturerow {
+    display: flex;
+}
+
+.menitemsexample {
+    float: left;
+    position: relative;
+    text-align: center;
+    color: whitesmoke;
+    font: size 25px;
+    white-space: nowrap;
+    padding: 7px;
+
+    opacity: 1;
+    transition: .7s ease;
+    backface-visibility: hidden;
+}
+
+.picturerow:hover .menitemsexample {
+  opacity: 0.7;
+}
+.picturerow:hover .decription {
+  opacity: 1;
+}
+
+.decription {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    background-color: #C4AE78;
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: sans-serif;
+
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.dinnerpromo {
+    display: flex;
+    float: left;
+    position: relative;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.promotext {
+    align-items: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #DDC7A0;
+}    
+.bookmebutton {
+    font-size: 15px;
+    border: None;
+    color: white;
+    padding: 11px 25px;
+    text-align: center;
+    text-decoration: None;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: black;
+}
+</style>
+
+
+
+
+
+
+<body style="background-color: #fff0ca;font-family: font:Verdana, Geneva, Tahoma, sans-serif;">
+<div class="topnav">
+    <a class="active" href="Restaurant.htm">Home</a>
+    <a href="Restaurant-Menu.htm">Menu</a>
+    <a href="#aboutus"></a>
+    <a href="#contact&reservation"></a>
+</div>
+
+<div class="container">
+    <img src="restaurant.jpg" alt="Restaurant view" width="100%"> 
+    <div class="slogan">Fine Dining as an Experience - For the Whole Family</div>
+</div>
+
+<div class="picturerow">
+    <div class="menitemsexample">
+        <img src="istockphoto-1020455710-612x612.jpg" alt="Creme Brulee" width="100%">
+        <div class="decription">Creme Brulee</div>
+    </div>
+
+    <div class="menitemsexample">
+        <img src="istockphoto-1316198632-612x612.jpg" alt="Creme Brulee" width="100%">
+        <div class="decription">Mousse au Chocolate</div>
+    </div>
+    <div class="menitemsexample">
+        <img src="istockphoto-686654378-612x612.jpg" alt="Pannacotta" width="100%">
+        <div class="decription">Pannacotta</div>
+    </div>
+</div>
+
+<div class="dinnerpromo">
+    <div class="cutlephoto">
+        <img src="photo-1473973916745-60839aebf06b.webp" alt="Besteck" width="450px">
+    </div>
+    <div class="promotext" style="text-align: center">
+        <h2>Family<br>4 Course Menu</h2>
+        <h4>Book an unforgettable night for your whole family. 
+            Everybody can enjoy what they like with our 5 course menu</h5><br>
+        <div style="list-style: None; font-style: italic;">
+            <a>Brie and Walnut Quesadillas with Tropical Fruit Salsa</aa><br><br><br>
+            <a>Honey Roasted Pears Salad with Thyme Verjus Dressing and Blue Cheese Toast</a><br><br><br>
+            <a>Roasted Pork with Apricot and Honey Mustard Glaze with Fruit Stuffing</a><br><br><br>
+            <a>Classic Crème Brulee</li><br><br>
+        </div><br>
+        <h4>399$</h4><br><br>
+        <a href="Restaurant-Menu.htm"><button 
+            class="bookmebutton" type="button">Book Now</button></a> 
+    </div>
+</div>
+<div class="topnav">
+    <a class="active" href="Restaurant.htm">Impressum</a>
+    <a href="Restaurant-Menu.htm">Contact</a>
+    <a href="#aboutus"></a>
+    <a href="#contact&reservation"></a>
+
+
+
+</body>
+
+
+
+
+
+</html>

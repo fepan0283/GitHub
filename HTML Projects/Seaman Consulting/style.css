@@ -1,0 +1,306 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(pictures/yacht\ top\ view.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.iconify {
+    font-size: 90px;
+    padding: 12px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-right: 6%;
+    padding-left: 6%;
+
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 25px 25px;
+    font-size: 18px;
+}
+nav ul li a:hover{
+    color: #DAA520;
+    transition: .2s ease-in-out;
+}
+.btn {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #deb242;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    padding: 3vh;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+    font-size: 2.5vh;
+}
+.btn:hover {
+    background-color: #deb242;
+    color: whitesmoke;
+}
+.main {
+    position: absolute;
+    top: 63%;
+    padding-left: 6%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+.name {
+    font-size: 42px;
+    color: whitesmoke;
+    padding-bottom: 7px;
+}
+.content {
+    color: #deb242;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+.findoutmore {
+    color: #ffffff;
+    font-size: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+.insideseaman {
+    font-size: 14px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+.ourstudies {
+    font-size: 24px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5px;  
+}
+.bloggings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 10%;
+}
+.pictures {
+    width: 50%;
+    padding-top: 10px;
+}
+.rightrows {
+    display: flex;
+    flex-direction: column;
+    padding-right: 6%;
+}
+.rightcolumn {
+    display: flex;
+    padding-left: 6%;
+}
+.picture {
+    width: 50%;
+}
+.headlines {
+    padding: 2%;
+    font-size: 2.5vh;
+    color: #deb242;
+    font-weight: bolder;
+}
+.blogcontent {
+    padding: 2%;
+    font-size: 2vh;
+    color: #000000;
+    line-height: 1.4;
+}
+
+.services{
+    margin-top: 18px;
+	text-align: center;
+    background-color: whitesmoke;
+    padding-bottom: 6vh;
+}
+.services h1 {
+    font-size: 6vh;
+    padding: 2vh;
+}
+.services p {
+    font-size: 2.9vh;
+}
+.containers {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #deb242;
+    height: 40vh;
+    width: 45vh;
+    margin: 3%;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 23px;
+    margin-bottom: 5%;
+}
+.iconify {
+    color: #deb242;;
+    font-size: 14vh;
+    font-weight: lighter;
+}
+.container h4 {
+    color: rgb(2, 2, 2);
+    font-size: 3vh;
+    padding: 3vh;
+    padding-top: .4vh
+}
+.container p {
+    color: rgb(79, 79, 79);
+    font-size: 2.7vh;
+    padding: 3vh;
+}
+.readmorebutton {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #deb242;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    padding: 3vh;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+    font-size: 2.5vh;
+}
+.readmorebutton:hover {
+    
+    background-color: #deb242;
+    color: whitesmoke;
+    transform: .2s;
+}
+.careerposter {
+    position: relative;
+    text-align: left;
+}
+.businessman {
+    display:block;
+    width: 100%;
+}
+.joinus{
+    position: absolute;
+    top: 34%;
+    margin-left: 10%;
+}
+.joinsubtitle {
+    font-size: 3vh;
+    padding-bottom: 20px;
+}
+.joinheadline {
+    font-size: 6vh;
+    padding-bottom: 20px;
+}
+.joininput {
+    padding-top: 20px;
+    border-radius: 6px;
+    padding: 7px;
+    border-style: none;
+    font-size: 3vh;
+    width: 50%;
+    font-style: italic;
+}
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #deb242;
+    width: 100%;
+}
+.newsletter h2 {
+    padding: 50px;
+    color: rgb(255, 255, 255);
+}
+.newsletter input {
+    width:400px;
+    height: 34px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 10px;
+    font-style: italic;
+}
+.newsletter button {
+    width: 100px;
+    height: 34px;
+    margin-left: 15px;
+    border-style: none;
+    background-color: white;
+    font-size: 18px;
+    color: #deb242;
+}
+.socialmedia {
+    padding-top: 20px;
+    background-color: #e9e6de;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socialmedia i {
+    color: blanchedalmond;
+    font-size: 23px;
+    margin: 2vh;
+    background-color: #deb242;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socialmedia a{
+    text-decoration: none;
+}
+.menu {
+    padding: 2vh;
+    background-color: #e9e6de;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.listitems {
+    list-style-type: none;
+    display: flex;
+    margin-left: 15px;
+    
+}
+.listitems li a{
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+}
+.listitems li a:hover{
+    color: #deb242;
+}
+.copyright {
+    background-color: #e9e6de;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    text-align: center;
+    color: rgb(109, 109, 109);
+}
