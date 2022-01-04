@@ -24,12 +24,16 @@ def create_first_instance():
         else:
             first_instance += random.choice(numbers)
             counter += 1
+    print("")
     print("Here is your new password:")
+    print("")
     print(first_instance)
+    print("")
     
 create_first_instance()
         
         
     
 
+    
     
