@@ -1,0 +1,193 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main {
+    background-image: url("images/bgr1.jpg");
+    height: 70vh;
+    background-position: bottom;
+    background-size: cover;
+}
+
+/* navbar start */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+}
+
+.logo {
+    width: 70px;
+}
+
+.navbaritems a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: .3s;
+}
+
+.navbaritems a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-style: solid;
+}
+
+.telephone {
+    background: rgb(155, 5, 5);
+    padding: 8px 6px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.telephone:hover {
+    background-color: white;
+    color: black;
+}
+
+/* main start */
+.headlinecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.headlinecontainer h1 {
+    margin: 0px;
+    font-weight: bolder;
+    font-size: 110px;
+    color: white;
+    text-align: center;
+}
+
+.headlinecontainer p {
+    margin: 0;
+    font-size: 20px;
+    color: white;
+}
+
+/*start how to order*/
+.ordersteps {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 150px;
+    font-family: 'Economica', sans-serif;
+    font-weight: bold;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.steps img {
+    padding-bottom: 20px;
+    width: 130px;
+}
+
+.steps p {
+    font-size: 30px;
+}
+
+
+/* menu start */
+.menu {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
+
+.secondheadline {
+    text-align: center;
+    font-size: 80px;
+    color: rgb(155, 5, 5);
+    padding: 30px 0 20px 0;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 150px 0;
+}
+
+.menuitems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 900px;
+    justify-content: space-evenly;
+}
+
+.menuitems img {
+    height: 300px;
+}
+
+.itemheadline {
+    font-size: 45px;
+    margin: 0px;
+    padding-bottom: 30px;
+    font-family: 'Economica', sans-serif;
+}
+
+.prices {
+    width: 350px;
+}
+
+.prices tr td {
+    font-size: 30px;
+    color: grey;
+    font-weight: bold;
+    padding: 3px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.tablecolumnsprice {
+    text-align: right;
+}
+
+
+
+/* footer start */
+.address {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 60px;
+    margin: 0;
+}
+
+.footer {
+    padding: 40px 0;
+    background-color: lavenderblush;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer div {
+    padding: 0 30px;
+}
+
+.socialmedia img {
+    padding: 0 20px;
+    width: 60px;
+}
