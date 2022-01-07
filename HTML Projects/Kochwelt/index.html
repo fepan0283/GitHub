@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodora - Best Food Ever</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:wght@700&family=Raleway&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
+</head>
+
+<body onload="includeHTML()">
+    <!-- import header from templates -->
+    <div w3-include-html="templates/header.html"></div>
+    <!-- header section -->
+    <div class="header">
+        <img src="/03 - Gruppenarbeit - Kochwelt/img/croissant.jpg" alt="" class="headerimg">
+        <div class="headertext">
+            <h3 class="header-h3">Französische Croissants</h3>
+            <p class="header-content">Schmackhafte Coirssants können auch zu Hause sehr einfach gepacken werden. Mit ca.
+                30 Minuten Aufwand kannst du ein wundervolles Frühstück zaubern.</p>
+            <a href="#" class="header-cta">Rezept öffnen</a>
+        </div>
+    </div>
+    <!-- Lust auf Neues? -->
+    <h3 class="offer-headline header-h3">Lust auf Neues?</h3>
+
+    <div class="offer-section">
+        <div class="offer">
+            <img src="/03 - Gruppenarbeit - Kochwelt/img/croissant.jpg" alt="" class="offer-picture">
+            <p class="offer-subtitle">Frische Croissants</p>
+        </div>
+        <div class="offer">
+            <img src="/03 - Gruppenarbeit - Kochwelt/img/croissant.jpg" alt="" class="offer-picture">
+            <p class="offer-subtitle">Frische Croissants</p>
+        </div>
+        <div class="offer">
+            <img src="/03 - Gruppenarbeit - Kochwelt/img/croissant.jpg" alt="" class="offer-picture">
+            <p class="offer-subtitle">Frische Croissants</p>
+        </div>
+    </div>
+    <!-- WOK vs Pfanne -->
+    <div class="pfanne-vs-wok">
+        <h3 class="header-h3" style="padding-top: 30px;">Pfanne vs. Wok - Was ist besser?</h3>
+        <div class="wok-container">
+            <p class="wok-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quia explicabo neque
+                obcaecati officia repudiandae odio atque eum nesciunt fugit? Adipisci laudantium ab voluptatum,
+                similique error inventore magnam esse sapiente.</p>
+            <img src="/03 - Gruppenarbeit - Kochwelt/img/wok.jpg" alt="">
+        </div>
+    </div>
+    <!-- Footer Import-->
+    <div w3-include-html="templates/footer.html"></div>
+
+
+
+
+
+
+</body>
+<script>
+    includeHTML();
+</script>
+
+
+
+</html>
