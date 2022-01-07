@@ -6,6 +6,7 @@
     padding-bottom: 2px;
 }
 
+/* start navigation bar */
 .menu-container {
     display: flex;
     justify-content: space-between;
@@ -38,6 +39,7 @@ nav a:hover {
     text-underline-offset: 5px;
 }
 
+/* header index page */
 .header {
     display: flex;
     justify-content: center;
@@ -54,6 +56,9 @@ nav a:hover {
 
 .headertext {
     padding: 50px 150px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .header-h3 {
@@ -63,9 +68,13 @@ nav a:hover {
     text-align: center;
 }
 
+#header-headline {
+    text-align: left !important;
+}
+
 p {
     color: rgb(154, 154, 154);
-    padding-bottom: 90px;
+    padding-bottom: 10px;
 }
 
 .headertext a {
@@ -73,6 +82,9 @@ p {
     background-color: green;
     padding: 10px 40px;
     text-decoration: none;
+    width: 110px;
+    margin-top: 50px;
+    text-align: center;
 }
 
 .offer-headline {
@@ -279,4 +291,88 @@ h4 {
     padding-left: 10px;
     color: rgb(194, 194, 194);
     font-weight: normal;
+}
+
+.impressum-container {
+    padding: 30px 150px;
+
+}
+
+.contact-container {
+    display: flex;
+    padding: 20px 150px;
+    gap: 20px;
+}
+
+.contact-input {
+    width: 100px;
+    text-align: left;
+    padding: 0 10px;
+    font-size: 13px;
+    height: 34px;
+}
+
+#contact-message {
+    margin: 0 150px 20px 150px;
+    width: 800px;
+    height: 300px;
+    border-radius: 10px;
+    border-color: rgb(223, 223, 223);
+    padding: 20px;
+    font-size: 14px;
+}
+
+
+/* all repices pages */
+
+
+.recipe-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 150px;
+}
+
+.recipe {
+    width: 300px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: rgb(233, 233, 233);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 10px;
+    background-color: white;
+}
+#recipe-grey {
+    background-color: rgb(245, 245, 245);
+}
+.recipe a {
+    text-decoration: none;
+    color: rgb(104, 104, 104);
+}
+.recipe a:hover {
+    color: green;
+}
+.recipe h5{
+    text-align: left !important;
+    padding: 10px 0;
+    font-size: 18px;
+
+}
+.recipe img {
+    width: 300px;
+    border-radius: 10px;
+}
+.reviewstars img {
+    width: 15px;
+    padding-bottom: 4px;
+}
+.recipe-icons {
+    display: flex;
+    gap: 10px;
+}
+.recipe-icons img {
+    width: 20px;
 }
