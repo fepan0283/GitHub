@@ -25,3 +25,10 @@ function includeHTML() {
     }
   }
 }
+
+function calcingredients(){
+  let asdf = document.getElementById('ingredientamount').innerHTML;
+  let numportions = document.getElementById('numpeople').value;
+  document.getElementById('ingredientamount').innerHTML = numportions * 1
+
+}

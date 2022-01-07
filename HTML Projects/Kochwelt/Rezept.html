@@ -37,28 +37,28 @@
     <br>
     <div class="portions">
         <h7>Zutaten für</h7>
-        <input class="portions-input" type="text">
-        <button class="portions-button">Portionen</button>
+        <input id="numpeople"class="portions-input" type="text">
+        <button onclick="calcingredients()" class="portions-button">Portionen</button>
     </div>
     <div class="ingredients-container">
         <div class="ingredient">
-            <p>1 Salzgurke (n)</p>
+            <p id="ingredientamount">1</p>
         </div>
         <div class="ingredient-transparent">
-            <p>1 Salzgurke (n)</p>
+            <p id="ingredientamount">1</p>
         </div>
         <div class="ingredient">
-            <p>1 Salzgurke (n)</p>
+            <p id="ingredientamount">1</p>
         </div>
         <div class="ingredient-transparent">
-            <p>1 Salzgurke (n)</p>
+            <p id="ingredientamount">1</p>
         </div>
     </div>
     <br>
     <div class="header-container">
         <h3 class="header-h4">Zubereitung</h3>
         <div class="tag-container no-bottom-border">
-            <div class="tag">
+            <div class="tag" id="prep-tags">
                 <img src="03 - Gruppenarbeit - Kochwelt/img/icons/clock-regular.svg" alt="">
                 <p>ca. 15 Minuten</p>
             </div>
@@ -81,5 +81,7 @@
 
     <div w3-include-html="templates/footer.html"></div>
 </body>
-
+<script>
+    calcingredients();
+</script>
 </html>

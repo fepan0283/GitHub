@@ -345,34 +345,164 @@ h4 {
     margin: 0 10px;
     background-color: white;
 }
+
 #recipe-grey {
     background-color: rgb(245, 245, 245);
 }
+
 .recipe a {
     text-decoration: none;
     color: rgb(104, 104, 104);
 }
+
 .recipe a:hover {
     color: green;
 }
-.recipe h5{
+
+.recipe h5 {
     text-align: left !important;
     padding: 10px 0;
     font-size: 18px;
 
 }
+
 .recipe img {
     width: 300px;
     border-radius: 10px;
 }
+
 .reviewstars img {
     width: 15px;
     padding-bottom: 4px;
 }
+
 .recipe-icons {
     display: flex;
     gap: 10px;
 }
+
 .recipe-icons img {
     width: 20px;
+}
+
+@media(max-width: 1200px) {
+    nav {
+        display: none;
+    }
+
+    .recipe-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    footer {
+        padding: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 230px;
+    }
+
+    .imprint-container img {
+        width: 35px;
+        padding: 20px 10px 20px 10px;
+    }
+
+    .menu-container {
+        justify-content: center;
+    }
+
+    .menu-container img {
+        padding: 0;
+    }
+
+    .header img {
+        padding: 20px 0;
+        border-radius: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px;
+    }
+
+    .headertext {
+        padding: 0 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .offer-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .wok-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        padding: 20px 0 20px 0;
+    }
+
+    .wok-content {
+        padding: 20px 20px 0 20px;
+    }
+
+    .header-container h3 {
+        text-align: center;
+    }
+
+    .preparation {
+        text-align: center;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    .recipe-creator {
+        justify-content: center;
+    }
+
+    .saladimg {
+        width: 100% !important;
+        border-radius: 0;
+    }
+
+    .header-container {
+        padding: 0;
+    }
+
+    .tag-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portions {
+        flex-direction: column;
+        padding: 0px 0px 20px 0px;
+    }
+
+    .ingredients-container {
+        padding: 0 50px;
+    }
+
+    .ingredients-container div p {
+        text-align: center;
+    }
+    .preparation {
+        padding: 0 50px;
+    }
+
+
+
+
+
+
+
 }
