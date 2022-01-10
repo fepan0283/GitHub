@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,33 @@
     <title>test</title>
     <script src="main.js"></script>
 </head>
-<body>
-    <button onclick="calcingredients()">nummer eingebeen</button>
-    <input id="numpeople"  type="text">
-    <p id="asdf" onclick="">asdf</p>
+
+<body onload="loadrecipe()">
+    <p id="recipe-test">asdf</p>
+    <button onclick="calcingredients()">nummer eingeben</button>
+    <input id="numpeople" type="text">
+    <p id="asdf">1</p>
 </body>
 
 <script>
-    function calcingredients(){
-        let numberingredients = document.getElementById('numpeople').value;
-        document.getElementById('asdf').innerHTML = numberingredients
+    let newnumber = [13, 14, 15, 16];
+
+    function loadrecipe() {
+
+        for (let i = 0; i < newnumber.length; i++) {
+            document.getElementById('recipe-test').innerHTML += `<p>${newnumber[i]}</p>`;
+        }
+    }
+
+    function calcingredients() {
+        let updatedList = newnumber;
+        let factor = document.getElementById('numpeople').value;
+        for (let i = 0; i < updatedList.length; i++) {
+            document.getElementById('recipe-test').innerHTML += '';
+            document.getElementById('recipe-test').innerHTML += `<p>${updatedList[i] * factor}</p>`;
+        }
+
     }
 </script>
+
 </html>

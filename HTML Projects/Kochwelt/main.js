@@ -27,8 +27,8 @@ function includeHTML() {
 }
 
 function calcingredients(){
-  let asdf = document.getElementById('ingredientamount').innerHTML;
+  let asdf = document.getElementById('ingredientamount').value;
   let numportions = document.getElementById('numpeople').value;
-  document.getElementById('ingredientamount').innerHTML = numportions * 1
+  document.getElementById('ingredientamount').innerHTML = numportions * 2
 
 }

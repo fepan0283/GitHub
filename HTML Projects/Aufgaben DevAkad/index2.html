@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testdoc</title>
+</head>
+
+<body>
+    <input id="numpeople" type="text">
+    <button onclick="onepersonrecipe()" id="calculate" >Portionen</button>
+    <div id="ingredients">
+
+    </div>
+
+    <input id="number1"type="number">
+    <input id="number2"type="number">
+    <button onclick="multiply()" id="multiply"></button>
+    <p id="result">results</p>
+</body>
+
+
+
+
+<script>
+    let recipe = ["Pfannkuchen", 1, "Eier", 100, "g Mehl", 50, "g Zucker"];
+    let numpeople = +document.getElementById('numpeople').value;
+    function onepersonrecipe() {
+        document.getElementById('ingredients').innerHTML = '';
+        document.getElementById('ingredients').innerHTML += `<h1>${recipe[0]}</h1>`;
+        for (let i = 1; i < recipe.length; i += 2) {
+            document.getElementById('ingredients').innerHTML += `<p>${recipe[i] * numpeople} ${recipe[i + 1]}</p>`;
+        }
+    }
+    function calculate() {
+    }
+    function multiply() {
+        let num1 = document.getElementById('number1').value;
+        let num2 = document.getElementById('number2').value;
+        document.getElementById('result').innerHTML = num1 * num2;
+    }
+
+</script>
+
+
+
+
+<style>
+
+
+
+</style>
+
+
+
+</html>
