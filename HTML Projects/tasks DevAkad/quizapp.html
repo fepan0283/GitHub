@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizapp</title>
+    <script src="quizscript.js"></script>
+    <link rel="stylesheet" href="quizstyles.css">
+</head>
+<body onload="loadquestion(question1)">
+    <div class="canvas">
+        <div class="score">
+            <div id="point1" class="point"></div>
+            <div id="point2" class="point"></div>
+            <div id="point3" class="point"></div>
+            <div id="point4" class="point"></div>
+            <div id="point5" class="point"></div>
+            <div id="point6" class="point"></div>
+            <div id="point7" class="point"></div>
+            <div id="point8" class="point"></div>
+            <div id="point9" class="point"></div>
+            <div id="point10" class="point"></div>
+
+        </div>
+        <div class="question">
+            <h1 class="questiontitle">History</h1>
+            <p id="questiontitle">question content</p>  
+        </div>
+        <div id="answer-container" class="answer-container">
+
+        </div>
+        <button id="next-button" onclick="loadquestion()">Next</button>
+    </div>
+    <button id="finish-button" class="finish-button">asdf</button>
+</body>
+</html>

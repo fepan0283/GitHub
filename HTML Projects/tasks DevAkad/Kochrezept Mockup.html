@@ -15,8 +15,8 @@
 
     </div>
 
-    <input id="number1"type="number">
-    <input id="number2"type="number">
+    <input id="number1" type="number">
+    <input id="number2" type="number">
     <button onclick="multiply()" id="multiply"></button>
     <p id="result">results</p>
 </body>
@@ -26,8 +26,8 @@
 
 <script>
     let recipe = ["Pfannkuchen", 1, "Eier", 100, "g Mehl", 50, "g Zucker"];
-    let numpeople = +document.getElementById('numpeople').value;
     function onepersonrecipe() {
+        let numpeople = +document.getElementById('numpeople').value;
         document.getElementById('ingredients').innerHTML = '';
         document.getElementById('ingredients').innerHTML += `<h1>${recipe[0]}</h1>`;
         for (let i = 1; i < recipe.length; i += 2) {
