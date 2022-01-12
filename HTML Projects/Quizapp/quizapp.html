@@ -30,8 +30,18 @@
         <div id="answer-container" class="answer-container">
 
         </div>
-        <button id="next-button" onclick="loadquestion()">Next</button>
-    </div>
-    <button id="finish-button" class="finish-button">asdf</button>
+        <div class="button-container">
+            <button id="finish-button" class="no-display" onclick="finishButtonClick()">Finish</button>
+            <button id="next-button" onclick="loadquestion()">Next</button>
+        </div>
+        </div>
+        <div id="finish-container" class="finish-container no-display">
+            <h1>Spiel beendet</h1>
+            <p id="finish-content" class="finish-content"></p>
+            <button onClick="history.go(0);">Nochmal spielen</button>
+        </div>
+        
+        
+    
 </body>
 </html>

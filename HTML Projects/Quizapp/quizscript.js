@@ -17,7 +17,7 @@ function loadquestion() {
     for (i = 1; i < 5; i++) {
         document.getElementById('answer-container').innerHTML += `<p onclick="checkanswer(this.id)" id="answer${i}" class="answer">${questionlist[questioncount][i]}</p>`
     }
-    
+
 }
 let gameTracking = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
@@ -38,7 +38,7 @@ function checkanswer(id) {
     }
     questioncount += 1;
     updateGameTracking()
-    setTimeout(endgame(),2000)
+
 }
 
 function updateGameTracking() {
@@ -51,18 +51,20 @@ function updateGameTracking() {
             document.getElementById(`point${questioncount}`).classList.add('tracking-false');
         }
     }
+    endgame()
 }
 
 function endgame() {
     if (gameTracking[9] === 1 || gameTracking[9] === 2) {
-        alert("asdf")
-        document.getElementById('next-button').classList.remove("finish-button");
-        document.getElementById('finish-button').classList.add("finish-button");
+        // alert("asdf")
+        document.getElementById('finish-button').classList.remove("no-display");
+        document.getElementById('next-button').classList.add("no-display");
     }
 }
 
-
-function gameLoop() {
-    loadquestion()
+function finishButtonClick() {
+    document.getElementById('finish-container').classList.remove('no-display');
+    let finalScore = gameTracking.filter(x => x == 1).length;
+    document.getElementById('finish-content').innerHTML += `<p>Glückwunsch<br>Du hast ${finalScore} / 10 Punkten erreicht!</p>`;
+    document.getElementById('finish-button').classList.add('no-display');
 }
-
