@@ -12,13 +12,7 @@
     <input id="numpeople" type="text">
     <button onclick="onepersonrecipe()" id="calculate" >Portionen</button>
     <div id="ingredients">
-
     </div>
-
-    <input id="number1" type="number">
-    <input id="number2" type="number">
-    <button onclick="multiply()" id="multiply"></button>
-    <p id="result">results</p>
 </body>
 
 
@@ -34,14 +28,6 @@
             document.getElementById('ingredients').innerHTML += `<p>${recipe[i] * numpeople} ${recipe[i + 1]}</p>`;
         }
     }
-    function calculate() {
-    }
-    function multiply() {
-        let num1 = document.getElementById('number1').value;
-        let num2 = document.getElementById('number2').value;
-        document.getElementById('result').innerHTML = num1 * num2;
-    }
-
 </script>
 
 
