@@ -12,7 +12,7 @@
         rel="stylesheet">
 </head>
 
-<body onload="includeHTML(), loadRecipe()">
+<body onload="includeHTML()">
 
     <div w3-include-html="templates/header.html"></div>
     <br><br><br><br>
@@ -37,15 +37,13 @@
     <br>
     <div class="portions">
         <h7>Zutaten für</h7>
-        <input id="numpeople"class="portions-input" type="text">
-        <button onclick="calcingredients()" class="portions-button">Portionen</button>
+        <input id="numpeople" class="portions-input" type="text" placeholder="1">
+        <button onclick="calcingredients(0)" class="portions-button">Portionen</button>
     </div>
 
     <div class="ingredients-container" id="ingredients">
+        Gib oben die Anzahl der Personen ein!
         <!-- see main.js, ingredients are generated onload -->
-
-
-
     </div>
 
     <br>
