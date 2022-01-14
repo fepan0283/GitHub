@@ -48,12 +48,16 @@
             </div>
             <div class="category-container">
                 <img src="/img/icons/magnifying-glass-3-32.png" alt="">
-                <p class="category">Beliebte Gerichte</p>
+                <p class="category" style="background-color: orange; padding: 9px;border-radius: 15px; color: white;">Beliebte Gerichte</p>
                 <p class="category">Sashimi</p>
                 <p class="category">Maki</p>
                 <p class="category">Sushi Menus</p>
                 <p class="category">Vegetarisch</p>
                 <p class="category">Fleisch</p>
+                <p class="category">Fisch</p>
+                <p class="category">Vegan</p>
+                <p class="category">Mittagsmenu</p>
+                <p class="category">Spezialrollen</p>
             </div>
             <div class="current-menu-container">
                 <h2>Beliebte Gerichte</h2>
@@ -71,15 +75,36 @@
                 <b>Warenkorb</b>
             </div>
             <div class="cart-content-container" id="cart-content-container">
-                <div id="cart-item-container" class="cart-item-container">
-                    <p>1</p>
+            <!-- js includes cart items when add button is clicked -->
+            </div>
+            <div id="final-sum-container" class="final-sum-container d-none">
+                <p>Zwischensumme</p>
+                <p class="final-sum" id="final-sum" ></p>
+            </div>
+            <div id="delivery-cost-container" class="delivery-cost-container d-none">
+                <p>Lieferkosten</p>
+                <p id="delivery-cost">1,00€</p>
+            </div>
+            <div id="total-container" class="delivery-cost-container d-none">
+                <b>Gesamt</b>
+                <b id="total-cost">dummy</b>
+            </div>
+            <div id="button-container" class="button-container d-none">
+                <button>Jetzt bestellen</button>
+            </div>
+            <div id="cart-item-container" class="cart-item-container d-none">
+                <div class="item-container">
+                    <p id="counter${menuItemNumber}" style="font-size: 18px">1</p>
                     <p>Maki Lachs</p>
-                    <div class="plus-minus-container">
-                        <a href="#" class="">+</a>
-                        <a href="#" class="">-</a>
-                    </div>
-                    <p>4,50€</p>
                 </div>
+                <div class="item-container">
+                    <div class="plus-minus-container">
+                        <img onclick="" src="/img/icons/plus-8-32.png" alt="">
+                        <img onclick="" src="/img/icons/minus-32.png" alt="">
+                   </div>
+                   <p>4,50€</p>
+                </div>
+
             </div>
         </div>
     </div>
