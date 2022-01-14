@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferando</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="loadMenuItems()">
+    <div class="menubar">
+        <img src="/img/lieferando-de-logo.png" alt="">
+        <p class="address">Friedhofstr. 14 42781 Haan</p>
+        <div class="menu">
+            <div class="languages">
+                <img src="/img/icons/germany.png" alt="">
+                <img src="/img/icons/united-kingdom.png" alt="">
+            </div>
+            <img src="/img/icons/menu.png" style="margin-left: 10px;" alt="">
+        </div>
+    </div>
+    <div class="main">
+        <div class="restaurant-content">
+            <img src="img/sushi-main.jpg" alt="">
+            <div class="restaurant-logo-container">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="title-container">
+                <div class="title-review-container">
+                    <h1>Sushi Factory</h1>
+                    <div class="star-container">
+                        <img src="/img/icons/star-32.png" alt="">
+                        <img src="/img/icons/star-32.png" alt="">
+                        <img src="/img/icons/star-32.png" alt="">
+                        <img src="/img/icons/star-32.png" alt="">
+                    </div>
+                </div>
+                <div class="info-container">
+                    <img src="/img/icons/info-32.png" alt="">
+                    <img src="/img/icons/question-mark-4-32.png" alt="">
+                </div>
+            </div>
+            <div class="category-container">
+                <img src="/img/icons/magnifying-glass-3-32.png" alt="">
+                <p class="category">Beliebte Gerichte</p>
+                <p class="category">Sashimi</p>
+                <p class="category">Maki</p>
+                <p class="category">Sushi Menus</p>
+                <p class="category">Vegetarisch</p>
+                <p class="category">Fleisch</p>
+            </div>
+            <div class="current-menu-container">
+                <h2>Beliebte Gerichte</h2>
+            </div>
+            <div id="all-items-container" class="all-items-container">
+                <!-- imported from js -->
+            </div>
+
+        </div>
+
+
+
+        <div class="cart">
+            <div class="cart-headline-container">
+                <b>Warenkorb</b>
+            </div>
+            <div class="cart-content-container" id="cart-content-container">
+                <div id="cart-item-container" class="cart-item-container">
+                    <p>1</p>
+                    <p>Maki Lachs</p>
+                    <div class="plus-minus-container">
+                        <a href="#" class="">+</a>
+                        <a href="#" class="">-</a>
+                    </div>
+                    <p>4,50€</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
