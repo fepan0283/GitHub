@@ -277,6 +277,11 @@ button:hover {
     align-items: center;
     gap: 20px;
 }
-@media () {
-    
+@media(max-width: 1000px) {
+    .restaurant-logo-container {
+        display: none !important;
+    }
+    .cart {
+        display: none !important;
+    }
 }

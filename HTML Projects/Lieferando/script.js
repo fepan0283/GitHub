@@ -62,7 +62,7 @@ function loadMenuItems() {
         document.getElementById('all-items-container').innerHTML += `
         <div class="menuitem-container" id="menuitem-container${i}"> 
             <div class="plus-icon-container" id="plus-icon-container${i}" onclick="addItemToCart(this.id)">
-                <img src="/img/icons/plus-8-32.png">
+                <img src="img/icons/plus-8-32.png">
             </div>
             <h2>${restaurantItems[i]["name"]}</h2>
             <p>${restaurantItems[i]["price"]}0€</p>
@@ -88,8 +88,8 @@ function addItemToCart(id) {
             </div>
             <div class="item-container">
                 <div class="plus-minus-container">
-                    <img onclick="addItemToCart(this.id)" id="image${menuItemNumber}" src="/img/icons/plus-8-32.png">
-                    <img onclick="deleteItemFromCart(this.id)" id="image${menuItemNumber}" src="/img/icons/minus-32.png">
+                    <img onclick="addItemToCart(this.id)" id="image${menuItemNumber}" src="img/icons/plus-8-32.png">
+                    <img onclick="deleteItemFromCart(this.id)" id="image${menuItemNumber}" src="img/icons/minus-32.png">
                 </div>
                 <p>${restaurantItems[menuItemNumber]["price"]}0€</p>
             </div>
