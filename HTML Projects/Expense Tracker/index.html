@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,102 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body>
-    
+
+<body onload="updateExpenseTable(), updateMonthlyTable(), updateCategoryTable()">
+    <nav>
+        <p>Home</p>
+        <p>Calendar view</p>
+    </nav>
+    <div class="statistics">
+        <div class="stats-by-month-container">
+            <h2>Expenses per Month</h2>
+            <table>
+                <tr>
+                    <th>Month</th>
+                    <th class="text-align-right">Amount</th>
+                </tr>
+                <tr class="totals-row">
+                    <td>TOTAL</td>
+                    <td class="text-align-right"id="total-monthly-expenses">0</td>
+                <tr>
+                    <td>January</td>
+                    <td class="text-align-right"id="month1">0</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td class="text-align-right"id="month2">0</td>
+                </tr>
+                <tr>
+                    <td>March</td>
+                    <td class="text-align-right"id="month3">0</td>
+                </tr>
+                <tr>
+                    <td>April</td>
+                    <td class="text-align-right"id="month4">0</td>
+                </tr>
+                <tr>
+                    <td>May</td>
+                    <td class="text-align-right"id="month5">0</td>
+                </tr>
+                <tr>
+                    <td>June</td>
+                    <td class="text-align-right"id="month6">0</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td class="text-align-right"id="month7">0</td>
+                </tr>
+                <tr>
+                    <td>August</td>
+                    <td class="text-align-right"id="month8">0</td>
+                </tr>
+                <tr>
+                    <td>September</td>
+                    <td class="text-align-right"id="month9">0</td>
+                </tr>
+                <tr>
+                    <td>October</td>
+                    <td class="text-align-right"id="month10">0</td>
+                </tr>
+                <tr>
+                    <td>November</td>
+                    <td class="text-align-right"id="month11">0</td>
+                </tr>
+                <tr>
+                    <td>Dezember</td>
+                    <td class="text-align-right" id="month12">0</td>
+                </tr>
+            </table>
+        </div>
+        <div class="stats-by-category-container">
+            <h2>Expenses per Category</h2>
+            <table id="category-table">
+                <!-- content inserted by Jacascript -->
+            </table>
+        </div>
+    </div>
+    <div class="new-entry-container">
+        <div class="input-container">
+            <input id="date" type="text" placeholder="Date (DD/MM/YY)">
+            <input id="description" type="text" placeholder="Description">
+            <label>
+                <input list="browsers" id="category" type="text" placeholder="Category"/></label>
+                <datalist id="browsers">
+                  <option value="Work">
+                  <option value="Leisure">
+                  <option value="Family">
+                </datalist>
+            <input id="amount" type="number" placeholder="Amount">
+            
+        </div>
+        <button onclick="addEntryToArray()">Add to List</button>
+    </div>
+
+    <div class="expense-content">
+        <table id="expense-table" class="expense-table">
+            <!-- inserted by JS -->
+        </table>
+    </div>
 </body>
+
 </html>
