@@ -1,12 +1,10 @@
 let expenses = JSON.parse(localStorage.getItem('expenses'));
 let totalExpenses = 0;
-for (i = 0; i < expenses.length; i++) {
-    totalExpenses += expenses[i].amount;
-}
 totalExpenses = totalExpenses.toFixed(2);
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
 function updateExpenseTable() {
+    expenses = JSON.parse(localStorage.getItem('expenses'));
     // add first total row
     document.getElementById('expense-table').innerHTML = "";
     document.getElementById('expense-table').innerHTML += `
@@ -38,6 +36,7 @@ function updateExpenseTable() {
     }
     updateMonthlyTable()
     updateCategoryTable()
+    calculateTotalExpenses()
 }
 
 function addEntryToArray() {
@@ -60,6 +59,7 @@ function addEntryToArray() {
     document.getElementById('amount').value = "";
     // save to localStorage
     localStorage.setItem("expenses", JSON.stringify(expenses));
+    calculateTotalExpenses();
     updateExpenseTable();
 }
 
@@ -68,10 +68,11 @@ function deleteEntry(id) {
     expenses.splice(entrynumber);
     localStorage.setItem("expenses", JSON.stringify(expenses));
     expenses = JSON.parse(localStorage.getItem('expenses'));
+    calculateTotalExpenses();
     updateExpenseTable();
     updateMonthlyTable();
+    updateCategoryTable();
     console.log(expenses);
-
 }
 
 function updateMonthlyTable(totalAmount) {
@@ -92,7 +93,7 @@ function updateMonthlyTable(totalAmount) {
 
 }
 
-function updateCategoryTable(totalMonthlySum) {
+function updateCategoryTable() {
     // get unique list of categories
     let categories = [];
     for (i = 0; i < expenses.length; i++) {
@@ -133,4 +134,12 @@ function updateCategoryTable(totalMonthlySum) {
         document.getElementById('category' + i).innerHTML = sums[i] + " €";
     }
     document.getElementById('total-category').innerHTML = totalExpenses + " €";
+}
+
+function calculateTotalExpenses() {
+    expenses = JSON.parse(localStorage.getItem('expenses'));
+    totalExpenses = 0;
+    for (i = 0; i < expenses.length; i++) {
+        totalExpenses += parseFloat(expenses[i].amount);
+    }
 }
