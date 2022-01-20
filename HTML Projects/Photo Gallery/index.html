@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="loadAllImages()">
+<body onload="loadAllImages() ">
     <nav>
-        <img src="/img/logo.png">
+        <img onclick="zoomInPicture()" src="/img/logo.png">
         <input type="text" placeholder="Search">
         <img src="/img/pages.png">
     </nav>
@@ -38,10 +38,15 @@
             </ul>
         </div>
         <div id="picture-container" class="picture-container">
-            <!-- inserted by js -->
         </div>
     </div>
-
+    <div id="zoom-picture-container" class="zoom-picture-container d-none" >
+        <img onclick="closeZoomPicture()" class="close-foto" src="/img/icons/x-mark-48.png">
+        <img id="zoomed-picture" src="/gallerypics/1.jpg">
+        <img class="arrow-right" src="/img/icons/arrow-88-48-2.png">
+        <img class="arrow-left" src="/img/icons/arrow-24-32.png">
+    </div>
 </body>
 <script src="script.js"></script>
+
 </html>
