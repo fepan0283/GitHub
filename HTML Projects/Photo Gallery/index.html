@@ -43,8 +43,8 @@
     <div id="zoom-picture-container" class="zoom-picture-container d-none" >
         <img onclick="closeZoomPicture()" class="close-foto" src="/img/icons/x-mark-48.png">
         <img id="zoomed-picture" src="/gallerypics/1.jpg">
-        <img class="arrow-right" src="/img/icons/arrow-88-48-2.png">
-        <img class="arrow-left" src="/img/icons/arrow-24-32.png">
+        <img onclick="switchRightPicture()" class="arrow-right" src="/img/icons/arrow-88-48-2.png">
+        <img onclick="switchLeftPicture(this.id)"class="arrow-left" src="/img/icons/arrow-24-32.png">
     </div>
 </body>
 <script src="script.js"></script>

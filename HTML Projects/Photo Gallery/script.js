@@ -26,11 +26,10 @@ function zoomInPicture(id) {
     let pictureId = id.slice(-1);
     console.log(id);
     document.getElementById('zoomed-picture').src = pictures[pictureId];
+    document.getElementById('zoomed-picture').id = `picture${pictureId}`;
     document.getElementById('zoom-picture-container').classList.remove("d-none");
 }
 
 function closeZoomPicture() {
     document.getElementById('zoom-picture-container').classList.add("d-none");
 }
-
-// function mit rechts und links Pfeilen
