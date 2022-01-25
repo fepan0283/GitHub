@@ -1,3 +1,4 @@
+// include emptry storage at start of code
 let expenses = JSON.parse(localStorage.getItem('expenses'));
 let totalExpenses = 0;
 totalExpenses = totalExpenses.toFixed(2);
