@@ -5,29 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 
-<body>
-    <img class="main-pic" src="/img/man smile.jpg">
-    <nav>
-        <img src="/img/logo.png">
-        <div class="menubar">
-            <a href="#">Home</a>
-            <a href="#">Team</a>
-            <a href="#">Leistungen</a>
-            <a href="#">Kontakt & Anfahrt</a>
-        </div>
-    </nav>
+<body onload="includeHTML()">
+    <div w3-include-html="templates/header.html"></div> 
     <div class="main-content-container">
-        <h1>Zahnarzt-Praxis Dr. Michael Pan und Team</h1>
-        <p>Lernen Sie uns, unser freundliches Team, unsere Leistungen und Praxisabläufe kennen. Wir freuen uns auf Ihren
-            Besuch!</p>
+        <img class="main-pic" src="/img/man smile.jpg">
+        <div class="main-content">
+            <h1>Zahn<span>ar</span>z<span>t</span>-Praxis Dr. Michael Pan und Team</h1>
+            <p>Lernen Sie uns, unser freundliches Team, unsere Leistungen und Praxisabläufe kennen. Wir freuen uns auf
+                Ihren
+                Besuch!</p>
+        </div>
     </div>
+    <div class="team-container-container">
+        <div class="team-container">
+            <img src="/img/Team-Kopfbild_DSC_4672.jpg">
+            <div class="team-content">
+                <h2>Unser Team</h2>
+                <p>Wir möchten, dass Patienten die Behandlung in unserer Zahnarzt-Praxis möglichst entspannt, in einer
+                    ruhigen und stressfreien Atmosphäre erleben: Von der Termin-Optimierung über die Beratung bis zum
+                    Abschluss der Behandlung.</p>
+                <button onclick="location.href='team.html'">Über Uns</button>
+            </div>
+        </div>
+    </div>
+    <div class="our-services-container">
+        <h2>Unsere Leistungen</h2>
+        <div class="services-container">
+            <div class="service">
+                <img src="/img/implant.png">
+                <h3>Lebensqualität mit Implantaten</h3>
+            </div>
+            <div class="service">
+                <img src="/img/mirror.png">
+                <h3>Zahnfleischerkrankungen</h3>
+            </div>
+            <div class="service">
+                <img src="/img/child-smile.png">
+                <h3>Professionelle Zahnreinigung</h3>
+            </div>
+        </div>
+        <button onclick="location.href='services.html'">Alle Leistungen</button>
+    </div>
+    <div w3-include-html="templates/footer.html"></div> 
 </body>
 
 </html>

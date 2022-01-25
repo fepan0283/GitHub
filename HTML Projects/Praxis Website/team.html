@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="script.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unser Team</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML()">
+    <div w3-include-html="templates/header.html"></div> 
+    
+    <img class="header-pic" src="/img/Team-Kopfbild_DSC_4672.jpg">
+    <div class="team-description">
+        <h1>Intensive Beratung und Betreuung</h1>
+        <p>Während der gesamten Behandlung bietet unser Team eine einfühlsame Betreuung. Unsere Mitarbeiterinnen sind als zahnärztliche Assistenz professionell ausgebildet. 
+            Jede einzelne kümmert sich freundlich und zuverlässig vor, während und nach der Behandlung um Sie.</p>
+    </div>
+    <div class="team-item-container">
+        <h1>Unser Team</h1>
+        <div class="dentist-container">
+            <div class="dentist">
+                <div onmouseover="displayDescription(this.id)" onmouseout="hideDescription(this.id)" id="pic-container1"
+                    class="pic-container">
+                    <img src="/img/Michael-Pan.png">
+                    <div id="employee-description1" class="employee-description">
+                        <p>Studium der Zahnheilkunde an der Georg-August-Universität in Göttingen.<br><br>
+                            <b>Weitere Ausbildung:</b><br>in Celle, Hamburg und Köln; Niedergelassen in Erkrath-Hochdahl seit 1997.
+                            <br><br>Fokus auf die Fort- und Weiterbildung im Bereich der zahnärztlichen Implantologie und
+                            Chirurgie, sowie der Ästhetischen Zahnheilkunde.</p>
+                    </div>
+                </div>
+                <h3>Dr. Michael Pan</h3>
+                <p>Zahnarzt</p>
+            </div>
+            <div class="dentist">
+                <div onmouseover="displayDescription(this.id)" onmouseout="hideDescription(this.id)" id="pic-container2"
+                    class="pic-container">
+                    <img src="/img/Tim-Mainka.png">
+                    <div id="employee-description2" class="employee-description">
+                        <p>Studium der Zahn-, Mund- und Kieferheilkunde an der Goethe-Universität Frankfurt am Main.<br><br>
+                            <b>Weitere Ausbildungen:</b><br>Rettungsassistent, chirurgisch technischer Assistent.
+                            Weiterbildungsassistent <br><br>In der Praxis Dr. Micheal Pan & Team seit 2021.</p>
+                    </div>
+                </div>
+                <h3>Dr. Tim Mainka</h3>
+                <p>Zahnarzt</p>
+            </div>
+        </div>
+    </div>
+    <div class="divide-line">
+
+    </div>
+    <div class="dentist-container">
+        <div class="dentist">
+            <img src="/img/Katrin Richter.png">
+            <h3>Katrin Richter</h3>
+            <p>Praxismanagemnet</p>
+        </div>
+        <div class="dentist">
+            <img src="/img/Katrin Kellermann.png">
+            <h3>Claudia Kellermann</h3>
+            <p>Zahnmedizinsche Fachangestellte</p>
+        </div>
+        <div class="dentist">
+            <img src="/img/Antonia Loi.png">
+            <h3>Antonia Loi</h3>
+            <p>Dentalhygienikerin</p>
+        </div>
+        <div class="dentist">
+            <img src="/img/Ute Rudholzer.png">
+            <h3>Ute Rudholzer</h3>
+            <p>Zahntechnikerin</p>
+        </div>
+        <div class="dentist">
+            <img src="/img/Peter Schemeit.png">
+            <h3>Peter Schemeit</h3>
+            <p>Kunststoffzahntechnik / Assistenz</p>
+        </div>
+    </div>
+    <div w3-include-html="templates/footer.html"></div> 
+</body>
+
+</html>
