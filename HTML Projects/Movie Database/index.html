@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Database</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="headermenu-container">
+        <img src="/menu-2.png" onclick="openCloseMenu()" class="menuicon">
+        <input type="text" id="searchitem" placeholder="Search...">
+        <button onclick="fetchData()">Search</button>
+    </div>
+
+    <div class="main-container">
+        <div class="menu-container">
+            <ul>
+                <li><a href="#">All Movies</a></li>
+                <li><a href="#">All TV Shows</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li><a href="#">Rented</a></li>
+            </ul>
+        </div>
+
+        <div class="content-container">
+            <h4 id="resultitem" >Search for any movie...</h4>
+            <div class="all-movies-container">
+                
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
